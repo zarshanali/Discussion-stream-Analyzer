@@ -1,0 +1,14 @@
+[server]
+maxUploadSize = 200           # MB per uploaded transcript (they are small text files)
+fileWatcherType = "none"      # avoids noisy PyTorch/Streamlit watcher errors (restart the app after editing code)
+
+[browser]
+gatherUsageStats = false
+
+[theme]
+base = "light"
+primaryColor = "#4f46e5"
+backgroundColor = "#f4f6fb"
+secondaryBackgroundColor = "#e9edf7"
+textColor = "#0f172a"
+font = "sans serif"

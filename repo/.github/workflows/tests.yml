@@ -1,0 +1,14 @@
+name: tests
+on: [push, pull_request]
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      # The tests use the offline TF-IDF embedder, so torch / transformers are not needed here.
+      - run: pip install streamlit numpy pandas scikit-learn pytest pyflakes
+      - run: python -m pyflakes stream_analyzer app.py
+      - run: python -m pytest -q

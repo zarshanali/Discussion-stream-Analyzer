@@ -1,0 +1,20 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+
+# App output (every run is saved here)
+outputs/
+
+# Notebooks / editors / OS
+.ipynb_checkpoints/
+.vscode/
+.idea/
+.DS_Store
+
+# Colab leftovers
+streamlit_logs.txt
+cloudflared
+cloudflared-linux-amd64.deb

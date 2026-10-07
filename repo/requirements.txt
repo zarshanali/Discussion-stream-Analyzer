@@ -1,0 +1,7 @@
+# Install a PyTorch build that matches your machine FIRST (https://pytorch.org/get-started/locally/), then:
+streamlit>=1.40
+numpy>=1.24
+pandas>=2.0
+scikit-learn>=1.2          # AgglomerativeClustering(metric=...) needs 1.2+
+sentence-transformers>=2.7 # topic detection (MiniLM / BGE)
+transformers>=4.44         # summary writer (Qwen); needs a GPU, otherwise choose "No AI model" in the sidebar
